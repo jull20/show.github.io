@@ -2,133 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link href="./assets/fonts/Figtree-VariableFont_wght.ttf" rel="stylesheet">
   
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Frontend Mentor | Social links profile</title>
 
   <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
     @font-face {
-      font-family: "Figtree";
-      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+      font-family: "Inter";
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+    }
+    .font_style{
+      font-family: "Inter";
+      line-height: 250%;
+      font-size: 14px;
+    }
+    .font_white{
+      color: hsl(0, 0%, 100%);
+    }
+    .font_green{
+      color: hsl(75, 94%, 57%);
+      font-weight: 700;
+    }
+
+    .description{
+      font-size: 13px;
+    }
+    .name{
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .flexbox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     body{
       width: 100vw;
       height: 100vh;
-      background-color: rgba(244, 208, 78, 1);
       margin: 0;
-      display: flex;
-      flex-direction: column;
+      background-color: rgb(20, 20, 20);
       justify-content: center;
-      align-items: center;
     }
     main{
-      background-color: rgb(255, 255, 255);
-      border-radius: 20px;
-      box-shadow: 8px 8px 0 rgb(0,0,0);
-      border: 1px solid rgba(17, 17, 17, 1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-sizing: border-box;
-      padding: 24px;
-      gap: 24px 0;
-    }
-    #img{
-      width: 100%;
+      width: 350px;
+      height: 550px;
+      background-color: rgb(31, 31, 31);
       border-radius: 10px;
+      padding: 34px;
+      box-sizing: border-box;
+      justify-content: space-between;
     }
-    .text{
-      font-family: "Figtree";
-      color: rgb(18, 18, 18);
-      line-height: 150%;
-
+    img{
+      border-radius: 100%;
+      width: 84px;
+      height: 84px;
     }
-    .content{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
-
-    }
-    #category{
-      font-weight: 800;
-      font-size: 14px;
-      width: auto;
-      height: auto;
-      background-color: rgba(244, 208, 78, 1);
-      padding: 4px 12px 4px 12px;
-      border-radius: 4px;
-    }
-    #date{
-      font-weight: 500;
-      font-size: 14px;
-    }
-    h3{
-      margin: 0;
-      font-size: 24px;
-    }
-    h3:hover{
-      color: rgba(244, 208, 78, 1);
-    }
-    #desc{
-      font-weight: 500;
-      font-size: 16px;
-      color: rgb(107, 107, 107);
-    }
-    .author{
+    .personal_info{
       width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 0 12px;
     }
-    #avatar{
-      width: 32px;
-      height: 32px;
+    .buttons{
+      width: 100%;
+      gap: 14px 0;
     }
-    .author span{
-      font-weight: 800;
-      font-size: 14px;
+    button{
+      width: 100%;
+      height: 40px;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 20%);
+      border: none;
+      border-radius: 10px;
+      font-weight: 700;
     }
-
-    @media screen and (max-width: 375px){
+    button:hover{
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 8%);
+    }
+    @media screen and (max-width: 400px){
       main{
-        width: 327px;
-        height: 501px;
+        width: 85%;
+        height: 65%;
+        padding: 34px;
       }
     }
-
-    @media screen and (min-width: 375px){
-      main{
-        width: 384px;
-        height: 522px;
-      }
-    }
-
   </style>
 </head>
-<body>
-  <main>
-    <svg xmlns="http://www.w3.org/2000/svg" id="img" height="201" fill="none" viewBox="0 0 336 201"><g clip-path="url(#a)"><path fill="#F4D04E" d="M0 .5h336v200H0z"/><rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 87.996 77.729)"/><rect width="139" height="95" x="54.055" y="77.729" fill="#111" rx="47.5" transform="rotate(-45 54.055 77.729)"/><path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/><rect width="139" height="95" x="20.114" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 20.114 77.729)"/><rect width="204.19" height="270.554" fill="#111" rx="102.095" transform="scale(-1 1) rotate(45 -103.887 14.564)"/><path stroke="#fff" stroke-width="3" d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"/><path stroke="#111" stroke-width="3" d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"/><path stroke="#111" stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"/><path stroke="#fff" stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/><mask id="b" width="285" height="285" x="234" y="-8" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/></mask><g stroke="#fff" mask="url(#b)"><path stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"/><path stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/></g></g><defs><clipPath id="a"><path fill="#fff" d="M0 .5h336v200H0z"/></clipPath></defs></svg>
-    <div class="content text">
-      <div id="category">
-        <span>Learning</span>
+<body class="flexbox">
+  <main class="flexbox font_style">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="avatar-jessica"> 
+      <div class="personal_info flexbox font_white">
+          <h3 class="name">Jessica Randall</h3>
+          <span class="font_green">London, United Kingdom</span>
       </div>
-      <span id="date">Published 21 Dec 2023</span>
-      <h3>HTML & CSS foundations</h3>
-      <span id="desc">These languages are the backbone of every website, defining structure, content, and presentation.</span>
-    </div>
-    <div class="author text">
-      <img id="avatar" src="./assets/images/image-avatar.webp" alt="Avatar">
-      <span id="name">Greg Hooper</span>
-    </div>
+      <span class="description  font_white">"Front-end developer and avid reader."</span>
+      <div class="buttons flexbox  font_white">
+          <button>GitHub</button>
+          <button>Frontend Mentor</button>
+          <button>LinkedIn</button>
+          <button>Twitter</button>
+          <button>Instagram</button>
+      </div>
   </main>
-
 </body>
 </html>
