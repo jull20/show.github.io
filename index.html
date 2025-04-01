@@ -6,108 +6,246 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Frontend Mentor | Recipe page</title>
 
   <style>
-    /* .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); } */
     @font-face {
-      font-family: "Inter";
-      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+      font-family: "Outfit";
+      src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
     }
-    .font_style{
-      font-family: "Inter";
-      line-height: 250%;
-      font-size: 14px;
-    }
-    .font_white{
-      color: hsl(0, 0%, 100%);
-    }
-    .font_green{
-      color: hsl(75, 94%, 57%);
-      font-weight: 700;
+    @font-face {
+      font-family: "Young Serif";
+      src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
     }
 
-    .description{
-      font-size: 13px;
-    }
-    .name{
-      font-size: 24px;
-      font-weight: 600;
-      margin: 0;
+
+    @media screen and (max-width: 375px){
+      main{
+        width: 100%;
+        gap: 37px 0;
+      }
+      .text_block{
+        gap: 29px 0;
+        padding: 0 32px 32px 32px;
+      }
+      h1{
+        font-size: 36px;
+        line-height: 35px;
+      }
+      .pink_zone{
+        padding: 18px 25px 18px 25px;
+        border-radius: 11px;
+      }
     }
 
-    .flexbox{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    @media screen and (min-width: 376px){
+      main{
+        width: 51%;
+        margin: 122px 0 122px 0;
+        padding: 40px;
+        border-radius: 25px;
+        gap: 29px 0;
+      }
+      img{
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+      }
+      .text_block{
+        gap: 29px 0;
+      }
+      h1{
+        font-size: 40px;
+        height: 40px;
+      }
+      .pink_zone{
+        padding: 28px;
+        border-radius: 10px;
+      }
     }
 
     body{
       width: 100vw;
-      height: 100vh;
       margin: 0;
-      background-color: rgb(20, 20, 20);
+      display: flex;
       justify-content: center;
+      align-items: center;
+      background-color: hsl(30, 54%, 90%);
     }
     main{
-      width: 350px;
-      height: 550px;
-      background-color: rgb(31, 31, 31);
-      border-radius: 10px;
-      padding: 34px;
+      height: 100%;
       box-sizing: border-box;
-      justify-content: space-between;
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
     }
-    img{
-      border-radius: 100%;
-      width: 84px;
-      height: 84px;
+    .text_block{
+        display: flex;
+        flex-direction: column;
     }
-    .personal_info{
-      width: 100%;
+    h1{
+      margin: 0;
+      font-weight: 400;
+      color: hsl(24, 5%, 18%);
+      font-family: "Young Serif";
     }
-    .buttons{
-      width: 100%;
+    h2{
+      color: hsl(14, 45%, 36%);
+      font-family: "Young Serif";
+      font-weight: 400;
+      margin: 0;
+      font-size: 28px;
+    }
+    h3{
+      color: hsl(332, 51%, 32%);
+      font-family: "Outfit";
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    span, li, td{
+      color: hsl(30, 10%, 34%);
+      font-family: "Outfit";
+      line-height: 25px;
+    }
+    .pink_zone{
+      background-color: hsl(330, 100%, 98%);
+    }
+    .header_list{
+      display: flex;
+      flex-direction: column;
       gap: 14px 0;
     }
-    button{
-      width: 100%;
-      height: 40px;
-      color: hsl(0, 0%, 100%);
-      background-color: hsl(0, 0%, 20%);
-      border: none;
-      border-radius: 10px;
+    .row{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 0 36px;
+      padding-left: 34px;
+    }
+    .list{
+      padding-left: 22px;
+      margin: 0;
+    }
+    .list li{
+      padding-left: 17px;
+    }
+    .list li:not(:last-child){
+        margin-bottom: 7px;
+    }
+    .list li::marker, .brown_bold{
+      color: hsl(14, 45%, 36%);
+      font-family: "Outfit";
       font-weight: 700;
     }
-    button:hover{
-      background-color: hsl(75, 94%, 57%);
-      color: hsl(0, 0%, 8%);
+    ul.list li::marker {
+      font-size: 10.5px;
     }
-    @media screen and (max-width: 400px){
-      main{
-        width: 85%;
-        height: 65%;
-        padding: 34px;
-      }
+    hr{
+      background-color: hsla(30, 10%, 34%);
+      opacity: 30%;
+      margin: 0;
+      border-radius: 10px;
     }
+    td{
+      width: 50%;
+    }
+    tr:not(:last-child){
+      border-bottom: 1px solid hsla(30, 10%, 34%, 0.2);
+    }
+    .nutrition_name{
+      padding: 10px 0 10px 27px;
+      box-sizing: border-box;
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+
   </style>
 </head>
-<body class="flexbox">
-  <main class="flexbox font_style">
-      <img src="./assets/images/avatar-jessica.jpeg" alt="avatar-jessica"> 
-      <div class="personal_info flexbox font_white">
-          <h3 class="name">Jessica Randall</h3>
-          <span class="font_green">London, United Kingdom</span>
+<body>
+  <main>
+    <img src="assets/images/image-omelette.jpeg" alt="omelette image">
+
+    <div class="text_block">
+      <h1>Simple Omelette Recipe</h1>
+      <span>
+        An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      </span>
+  
+      <div class="header_list pink_zone">
+        <h3>Preparation time</h3>
+        <ul class="list">
+          <li><b>Total:</b> Approximately 10 minutes</li>
+          <li><b>Preparation:</b> 5 minutes</li>
+          <li><b>Cooking:</b> 5 minutes</li>
+        </ul>
       </div>
-      <span class="description  font_white">"Front-end developer and avid reader."</span>
-      <div class="buttons flexbox  font_white">
-          <button>GitHub</button>
-          <button>Frontend Mentor</button>
-          <button>LinkedIn</button>
-          <button>Twitter</button>
-          <button>Instagram</button>
+  
+      <div class="header_list">
+        <h2>Ingredients</h2>
+        <ul class="list">
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
       </div>
+  
+      <hr>
+  
+      <div class="header_list">
+        <h2>Instructions</h2>
+        <ol class="list">
+          <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        
+          <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        
+          <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          the eggs evenly coat the surface.</li>
+        
+          <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        
+          <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        
+          <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </div>
+  
+      <hr>
+  
+      <div class="header_list">
+        <h2>Nutrition</h2>
+        <span>The table below shows nutritional values per serving without the additional fillings.</span>
+        <table>
+          <tr>
+            <td class="nutrition_name">Calories</td>
+            <td class="brown_bold">277kcal</td>
+          </tr>
+          <tr>
+            <td class="nutrition_name">Carbs</td>
+            <td class="brown_bold">0g</td>
+          </tr>
+          <tr>
+            <td class="nutrition_name">Protein</td>
+            <td class="brown_bold">20g</td>
+          </tr>
+          <tr>
+            <td class="nutrition_name">Fat</td>
+            <td class="brown_bold">22g</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
   </main>
+
 </body>
 </html>
