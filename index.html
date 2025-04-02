@@ -4,248 +4,180 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Recipe page</title>
+  <title>Frontend Mentor | Product preview card component</title>
 
   <style>
     @font-face {
-      font-family: "Outfit";
-      src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+      font-family: "Montserrat";
+      src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
     }
     @font-face {
-      font-family: "Young Serif";
-      src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+      font-family: "Fraunces";
+      src: url(./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf) format("truetype");
     }
-
-
+  /* ///////////MOBILE///////////// */
     @media screen and (max-width: 375px){
       main{
+        width: 350px;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        flex-direction: column;   
+      }
+      .product_img{
+        background-image: url(assets/images/image-product-desktop.jpg);
+        background-size: cover;
         width: 100%;
-        gap: 37px 0;
+        height: 342px;
+        border-radius: 8px 8px 0 0;
+        background-position: 0 -30px;
       }
-      .text_block{
-        gap: 29px 0;
-        padding: 0 32px 32px 32px;
-      }
-      h1{
-        font-size: 36px;
-        line-height: 35px;
-      }
-      .pink_zone{
-        padding: 18px 25px 18px 25px;
-        border-radius: 11px;
+      .content{
+        display: flex;
+        flex-direction: column;
+        gap: 24px 0;
       }
     }
-
-    @media screen and (min-width: 376px){
-      main{
-        width: 51%;
-        margin: 122px 0 122px 0;
-        padding: 40px;
-        border-radius: 25px;
-        gap: 29px 0;
-      }
-      img{
-        width: 100%;
-        border-radius: 10px;
-        height: auto;
-      }
-      .text_block{
-        gap: 29px 0;
-      }
-      h1{
-        font-size: 40px;
-        height: 40px;
-      }
-      .pink_zone{
-        padding: 28px;
-        border-radius: 10px;
-      }
+  /* ///////////TABLET///////////// */
+  @media screen and (min-width: 376px){
+    main{
+      width: 600px;
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      flex-direction: row;   
     }
+    .product_img{
+      background-image: url(assets/images/image-product-desktop.jpg);
+      background-size: cover;
+      width: 50%;
+      border-radius: 8px 0 0 8px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 32px 0;
+    }
+  }
 
     body{
+      height: 100vh;
       width: 100vw;
-      margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: hsl(30, 54%, 90%);
+      margin: 0;
+      background-color: hsl(30, 38%, 92%);
+      font-size: 16px;
     }
     main{
-      height: 100%;
       box-sizing: border-box;
       background-color: hsl(0, 0%, 100%);
       display: flex;
-      flex-direction: column;
     }
-    .text_block{
-        display: flex;
-        flex-direction: column;
-    }
-    h1{
-      margin: 0;
-      font-weight: 400;
-      color: hsl(24, 5%, 18%);
-      font-family: "Young Serif";
-    }
-    h2{
-      color: hsl(14, 45%, 36%);
-      font-family: "Young Serif";
-      font-weight: 400;
-      margin: 0;
-      font-size: 28px;
-    }
-    h3{
-      color: hsl(332, 51%, 32%);
-      font-family: "Outfit";
-      margin: 0;
-      font-size: 20px;
-      font-weight: 600;
-    }
-    span, li, td{
-      color: hsl(30, 10%, 34%);
-      font-family: "Outfit";
-      line-height: 25px;
-    }
-    .pink_zone{
-      background-color: hsl(330, 100%, 98%);
-    }
-    .header_list{
-      display: flex;
-      flex-direction: column;
-      gap: 14px 0;
-    }
-    .row{
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      gap: 0 36px;
-      padding-left: 34px;
-    }
-    .list{
-      padding-left: 22px;
-      margin: 0;
-    }
-    .list li{
-      padding-left: 17px;
-    }
-    .list li:not(:last-child){
-        margin-bottom: 7px;
-    }
-    .list li::marker, .brown_bold{
-      color: hsl(14, 45%, 36%);
-      font-family: "Outfit";
-      font-weight: 700;
-    }
-    ul.list li::marker {
-      font-size: 10.5px;
-    }
-    hr{
-      background-color: hsla(30, 10%, 34%);
-      opacity: 30%;
-      margin: 0;
-      border-radius: 10px;
-    }
-    td{
-      width: 50%;
-    }
-    tr:not(:last-child){
-      border-bottom: 1px solid hsla(30, 10%, 34%, 0.2);
-    }
-    .nutrition_name{
-      padding: 10px 0 10px 27px;
+    .content{
+      padding: 2em;
       box-sizing: border-box;
     }
-    table{
-      width: 100%;
-      border-collapse: collapse;
+    .text{
+      display: flex;
+      flex-direction: column;
+      gap: 24px 0;
     }
-    
+    .content .text #product_type{
+      font-family: "Montserrat";
+      font-size: .75em;
+      letter-spacing: .4em;
+      line-height: 120%;
+      color: hsl(228, 12%, 48%);
+      margin: 0;
+    }
+    .content .text #product_name{
+      font-family: "Fraunces";
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 100%;
+      color: hsl(212, 21%, 14%);
+      margin: 0;
+    }
+    .content .text #description{
+      font-family: "Montserrat";
+      font-size: .875em;
+      letter-spacing: 0;
+      line-height: 160%;
+      color: hsl(228, 12%, 48%);
+      margin: 0;
+    }
+    .content .price{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0 16px;
+    }
+    .content .price #new{
+      font-family: "Fraunces";
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 100%;
+      color: hsl(158, 36%, 37%);
+    }
+    .content .price #old{
+      font-family: "Montserrat";
+      font-size: .9em;
+      letter-spacing: 0;
+      line-height: 120%;
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+    }
+    button{
+      padding: 1em 2em 1em 2em;
+      background-color: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+      border: none;
+      border-radius: .5em;
+      font-family: "Montserrat";
+      font-size: .875em;
+      font-weight: bold;
+      line-height: 110%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0 8px;
+      transition: background-color 0.4s;
+    }
+    button:hover{
+      background-color: hsl(158, 42%, 18%);
+    }
 
   </style>
 </head>
 <body>
   <main>
-    <img src="assets/images/image-omelette.jpeg" alt="omelette image">
-
-    <div class="text_block">
-      <h1>Simple Omelette Recipe</h1>
-      <span>
-        An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-      </span>
-  
-      <div class="header_list pink_zone">
-        <h3>Preparation time</h3>
-        <ul class="list">
-          <li><b>Total:</b> Approximately 10 minutes</li>
-          <li><b>Preparation:</b> 5 minutes</li>
-          <li><b>Cooking:</b> 5 minutes</li>
-        </ul>
+    <div class="product_img"></div>
+    <div class="content">
+      <div class="text">
+        <span id="product_type">PERFUME</span>
+        <h1 id="product_name">Gabrielle Essence Eau De Parfum</h1>
+        <p id="description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
       </div>
-  
-      <div class="header_list">
-        <h2>Ingredients</h2>
-        <ul class="list">
-          <li>2-3 large eggs</li>
-          <li>Salt, to taste</li>
-          <li>Pepper, to taste</li>
-          <li>1 tablespoon of butter or oil</li>
-          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-        </ul>
+      <div class="price">
+        <span id="new">$149.99</span>
+        <span id="old">$169.99</span>
       </div>
-  
-      <hr>
-  
-      <div class="header_list">
-        <h2>Instructions</h2>
-        <ol class="list">
-          <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-          You can add a tablespoon of water or milk for a fluffier texture.</li>
-        
-          <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        
-          <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-          the eggs evenly coat the surface.</li>
-        
-          <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
-          middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        
-          <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
-          fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        
-          <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
-        </ol>
-      </div>
-  
-      <hr>
-  
-      <div class="header_list">
-        <h2>Nutrition</h2>
-        <span>The table below shows nutritional values per serving without the additional fillings.</span>
-        <table>
-          <tr>
-            <td class="nutrition_name">Calories</td>
-            <td class="brown_bold">277kcal</td>
-          </tr>
-          <tr>
-            <td class="nutrition_name">Carbs</td>
-            <td class="brown_bold">0g</td>
-          </tr>
-          <tr>
-            <td class="nutrition_name">Protein</td>
-            <td class="brown_bold">20g</td>
-          </tr>
-          <tr>
-            <td class="nutrition_name">Fat</td>
-            <td class="brown_bold">22g</td>
-          </tr>
-        </table>
-      </div>
+      <button>
+        <img src="assets/images/icon-cart.svg" alt="">
+        Add to Cart
+      </button>
     </div>
-
   </main>
 
+  
 </body>
 </html>
