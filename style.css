@@ -1,0 +1,223 @@
+:root {
+    --grey-500: #4D4F62;
+    --grey-400: #6A7178;
+    --bg-white: #FAFAFA;
+    --white:    #FFFFFF;
+    --red:      #EA5454;
+    --cyan:     #44D3D2;
+    --blue:     #549EF2;
+    --orange:   #FCAE4A;
+    --shadow:   #83a6d280;
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(./assets/fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Poppins Extra Light";
+    src: url(./assets/fonts/Poppins-ExtraLight.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(./assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+.text-preset-1{
+    font-family: "Poppins Bold";
+    font-weight: 600;
+    color: var(--grey-500);
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+.text-preset-2{
+    font-family: "Poppins Extra Light";
+    font-weight: 200;
+    color: var(--grey-500);
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+.text-preset-3{
+    font-family: "Poppins Bold";
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey-500);
+    line-height: 135%;
+    letter-spacing: 0;
+}
+.text-preset-4{
+    font-family: "Poppins Regular";
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grey-500);
+    line-height: 140%;
+    letter-spacing: 0.1px;
+}
+.text-preset-5{
+    font-family: "Poppins Regular";
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--grey-400);
+    line-height: 160%;
+    letter-spacing: 0;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+
+.border-blue{
+    border-top: 4px solid var(--blue);
+}
+
+.border-orange{
+    border-top: 4px solid var(--orange);
+}
+
+.border-red{
+    border-top: 4px solid var(--red);
+}
+
+.border-cyan{
+    border-top: 4px solid var(--cyan);
+}
+
+@media screen and (max-width: 375px){
+    .text-preset-1{
+        font-family: "Poppins Regular";
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--grey-500);
+        line-height: 140%;
+        letter-spacing: 0.1px;
+    }
+    .text-preset-2{
+        font-size: 24px;
+    }
+    .content_wrapper{
+        flex-direction: column;
+        gap: 32px 0;
+    }
+    .card_wrapper{
+        flex-direction: column;
+        gap: 32px 0;
+    }
+    body{
+        margin: 56px 30px 46px 30px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .text-preset-1, .text-preset-2{
+        font-size: 36px;
+    }
+    .content_wrapper{
+        flex-direction: column;
+        gap: 32px 0;
+        margin: 0 50px 0 50px;  
+    }
+    .card_wrapper{
+        flex-direction: row;
+        gap: 0 32px;
+        width: 100%;
+    }
+    .card{
+        max-width: 314px;
+        width: calc(100%/2);
+    }
+    body{
+        margin: 80px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .text-preset-1, .text-preset-2{
+        font-size: 36px;
+    }
+    .content_wrapper{
+        flex-direction: row;
+        gap: 0 32px;
+        margin: 0 50px 0 50px;
+    }
+
+    .card_wrapper{
+        flex-direction: column;
+        gap: 32px 0;
+        max-width: 350px;
+        width: 33.3%;
+    }
+
+    body{
+        margin: 102px 0 0 0;
+    }
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-color: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 74px 0;
+}
+
+.title_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 16px 0;
+    max-width: 540px;
+    text-align: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+}
+
+.content_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    box-sizing: border-box;
+}
+
+.card_wrapper{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+    gap: 32px;
+    box-sizing: border-box;
+    
+    height: 250px;
+    box-shadow: 0 15px 30px -11px var(--shadow);
+    background-color: var(--white);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+img{
+    width: 64px;
+    height: 64px;
+}
+
+

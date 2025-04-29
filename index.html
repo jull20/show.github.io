@@ -2,182 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Product preview card component</title>
-
-  <style>
-    @font-face {
-      font-family: "Montserrat";
-      src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype");
-    }
-    @font-face {
-      font-family: "Fraunces";
-      src: url(./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf) format("truetype");
-    }
-  /* ///////////MOBILE///////////// */
-    @media screen and (max-width: 375px){
-      main{
-        width: 350px;
-        background-color: #FFFFFF;
-        border-radius: 8px;
-        flex-direction: column;   
-      }
-      .product_img{
-        background-image: url(assets/images/image-product-desktop.jpg);
-        background-size: cover;
-        width: 100%;
-        height: 342px;
-        border-radius: 8px 8px 0 0;
-        background-position: 0 -30px;
-      }
-      .content{
-        display: flex;
-        flex-direction: column;
-        gap: 24px 0;
-      }
-    }
-  /* ///////////TABLET///////////// */
-  @media screen and (min-width: 376px){
-    main{
-      width: 600px;
-      background-color: #FFFFFF;
-      border-radius: 8px;
-      flex-direction: row;   
-    }
-    .product_img{
-      background-image: url(assets/images/image-product-desktop.jpg);
-      background-size: cover;
-      width: 50%;
-      border-radius: 8px 0 0 8px;
-    }
-    .content{
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      gap: 32px 0;
-    }
-  }
-
-    body{
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      background-color: hsl(30, 38%, 92%);
-      font-size: 16px;
-    }
-    main{
-      box-sizing: border-box;
-      background-color: hsl(0, 0%, 100%);
-      display: flex;
-    }
-    .content{
-      padding: 2em;
-      box-sizing: border-box;
-    }
-    .text{
-      display: flex;
-      flex-direction: column;
-      gap: 24px 0;
-    }
-    .content .text #product_type{
-      font-family: "Montserrat";
-      font-size: .75em;
-      letter-spacing: .4em;
-      line-height: 120%;
-      color: hsl(228, 12%, 48%);
-      margin: 0;
-    }
-    .content .text #product_name{
-      font-family: "Fraunces";
-      font-size: 2em;
-      font-weight: bold;
-      letter-spacing: 0;
-      line-height: 100%;
-      color: hsl(212, 21%, 14%);
-      margin: 0;
-    }
-    .content .text #description{
-      font-family: "Montserrat";
-      font-size: .875em;
-      letter-spacing: 0;
-      line-height: 160%;
-      color: hsl(228, 12%, 48%);
-      margin: 0;
-    }
-    .content .price{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0 16px;
-    }
-    .content .price #new{
-      font-family: "Fraunces";
-      font-size: 2em;
-      font-weight: bold;
-      letter-spacing: 0;
-      line-height: 100%;
-      color: hsl(158, 36%, 37%);
-    }
-    .content .price #old{
-      font-family: "Montserrat";
-      font-size: .9em;
-      letter-spacing: 0;
-      line-height: 120%;
-      color: hsl(228, 12%, 48%);
-      text-decoration: line-through;
-    }
-    button{
-      padding: 1em 2em 1em 2em;
-      background-color: hsl(158, 36%, 37%);
-      color: hsl(0, 0%, 100%);
-      border: none;
-      border-radius: .5em;
-      font-family: "Montserrat";
-      font-size: .875em;
-      font-weight: bold;
-      line-height: 110%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 0 8px;
-      transition: background-color 0.4s;
-    }
-    button:hover{
-      background-color: hsl(158, 42%, 18%);
-    }
-
-  </style>
+  <title>Frontend Mentor | Four card feature section</title>
 </head>
 <body>
-  <main>
-    <div class="product_img"></div>
-    <div class="content">
-      <div class="text">
-        <span id="product_type">PERFUME</span>
-        <h1 id="product_name">Gabrielle Essence Eau De Parfum</h1>
-        <p id="description">
-          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-          Perfumer-Creator for the House of CHANEL.
-        </p>
+    <div class="title_wrapper">
+      <div class="title">
+        <h2 class="text-preset-2">Reliable, efficient delivery</h2>
+        <h1 class="text-preset-1">Powered by Technology</h1>
       </div>
-      <div class="price">
-        <span id="new">$149.99</span>
-        <span id="old">$169.99</span>
-      </div>
-      <button>
-        <img src="assets/images/icon-cart.svg" alt="">
-        Add to Cart
-      </button>
+      <p class="text-preset-4">
+        Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful
+      </p>
     </div>
-  </main>
 
+    <div class="content_wrapper">
+
+      <div class="card_wrapper">
+        <div class="card border-cyan">
+          <div class="text">
+            <h3 class="text-preset-3">Supervisor</h3>
+            <p class="text-preset-5">Monitors activity to identify project roadblocks</p>
+          </div>
+          <img src="assets/images/icon-supervisor.svg" alt="">
+        </div>
+      </div>
+
+
+      <div class="card_wrapper">
+        <div class="card border-red">
+          <div class="text">
+            <h3 class="text-preset-3">Team Builder</h3>
+            <p class="text-preset-5">Scans our talent network to create the optimal team for your project</p>
+          </div>
+          <img src="assets/images/icon-team-builder.svg" alt="">
+        </div>
   
+        <div class="card border-orange">
+          <div class="text">
+            <h3 class="text-preset-3">Karma</h3>
+            <p class="text-preset-5">Regularly evaluates our talent to ensure quality</p>
+          </div>
+          <img src="assets/images/icon-karma.svg" alt="">
+        </div>
+      </div>
+
+      <div class="card_wrapper">
+        <div class="card border-blue">
+          <div class="text">
+            <h3 class="text-preset-3">Calculator</h3>
+            <p class="text-preset-5">Uses data from past projects to provide better delivery estimates</p>
+          </div>
+          <img src="assets/images/icon-calculator.svg" alt="">
+        </div>
+      </div>
+
+    </div>
 </body>
 </html>
