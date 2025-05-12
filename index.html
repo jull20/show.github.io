@@ -2,117 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
+  <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  <div class="grid">
-    <div class="child purple">
-      <img class="svg" src="assets/images/bg-pattern-quotation.svg" alt="">
-      <div class="profile">
-        <img class="avatar" src="assets/images/image-daniel.jpg" alt="">
-        <div class="info">
-          <span class="name">Daniel Clifford</span>
-          <span class="status">Verified Graduate</span>
-        </div>
-      </div>
-      <span class="title">
-        I received a job offer mid-course, and the subjects I learned were current, if not more so, 
-        in the company I joined. I honestly feel I got every penny’s worth.
-      </span>
-      <span class="quotation">
-        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
-        transition and have heard some people who had an amazing experience here. I signed up 
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
-      </span>
-    </div>
-
-    <div class="child grey">
-      <div class="profile">
-          <img class="avatar" src="assets/images/image-jonathan.jpg" alt="">
-          <div class="info">
-            <span class="name">Jonathan Walters</span>
-            <span class="status">Verified Graduate</span>
-          </div>
-      </div>
-      <span class="title">
-        The team was very supportive and kept me motivated
-      </span>
-      <span class="quotation">
-        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-        for a big company. This was one of the best investments I’ve made in myself. ”
-      </span>
-    </div>
-
-    <div class="child short white">
-      <div class="profile">
-        <img class="avatar" src="assets/images/image-jeanette.jpg" alt="">
-        <div class="info">
-          <span class="name">Jeanette Harmon</span>
-          <span class="status">Verified Graduate</span>    
-        </div>
-      </div>
-      <span class="title">
-        An overall wonderful and rewarding experience
-      </span>
-      <span class="quotation">
-          “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
-          while doing something I love. ”
-      </span>
-    </div>
-
-    <div class="child dark_blue">
-      <div class="profile">
-          <img class="avatar" src="assets/images/image-patrick.jpg" alt="">
-          <div class="info">
-            <span class="name">Patrick Abrams</span>
-            <span class="status">Verified Graduate</span>  
-          </div>
-      </div>
-      <span class="title">
-          Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-          learning from their experiences was easy.
-      </span>
-      <span class="quotation">
-          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
-          gave me the confidence necessary to be able to go out in the world and present myself as a capable 
-          junior developer. The standard is above the rest. You will get the personal attention you need from 
-          an incredible community of smart and amazing people. ”
-      </span>
-    </div>
-
-    <div class="child long white">
-      <div class="profile">
-          <img class="avatar" src="assets/images/image-kira.jpg" alt="">
-          <div class="info">
-            <span class="name">Kira Whittle</span>
-            <span class="status">Verified Graduate</span>
-          </div>
-      </div>
-      <span class="title">
-          Such a life-changing experience. Highly recommended!
-      </span>
-      <span class="quotation">
-          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
-          professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
-          student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
-          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
-          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
-          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
-          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-          100% recommend! ”
-      </span>
-    </div>
+  <div class="logo">
+    <img class="icon" src="assets/logo.svg" alt="dots icon">
   </div>
+
+  <header>
+    <img class="left_img" src="assets/desktop/image-hero-left.png" alt="">
+    <div class="text_group">
+      <h1>Group Chat for Everyone</h1>
+      <span class="description">
+        Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+      </span>
+      <div class="button_group">
+        <div class="blue button">Download <span style="color: var(--blue-300);">v1.3</span></div>
+        <div class="purple button">What is it?</div>
+      </div>
+    </div>
+    <img class="right_img" src="assets/desktop/image-hero-right.png" alt="">
+  </header>
+  
+  <main>
+    <img src="assets/arrow_01.svg" alt="">
+    <div class="gallery">
+      <img src="assets/desktop/image-woman-in-videocall.jpg" alt="">
+      <img src="assets/desktop/image-women-videochatting.jpg" alt="">
+      <img src="assets/desktop/image-men-in-meeting.jpg" alt="">
+      <img src="assets/desktop/image-man-texting.jpg" alt="">
+    </div>
+    <div class="text_group">
+      <div class="title">
+        <span class="blue_text">Built for modern use</span>
+        <h2>Smarter meetings, all in one place</h2>
+      </div>
+      <span class="description">
+        Send messages, share files, show your screen, and record your meetings — all in one 
+        workspace. Control who can join with invite-only team access, data encryption, and data export.
+      </span>
+    </div>
+  </main>
+  <div class="arrow_2">
+    <img src="assets/arrow_02.svg" alt="">
+  </div>
+  <footer>
+    <div class="conteiner">
+      <h2>Experience more together</h2>
+      <span class="description">
+        Stay connected with reliable&nbsp;HD meetings and unlimited one-on-one and group video sessions.
+      </span>
+      <div>
+        <div class="purple button">Download <span style="color: var(--purple-300);">v1.3</span></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
-
-
-
