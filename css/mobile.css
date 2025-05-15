@@ -1,0 +1,49 @@
+@media screen and (max-width: 375px) {
+    .main__conteiner{
+        --row-gap:    var(--spacing-400);
+        --column-gap: var(--spacing-0);
+        --width:      32.7rem;
+        --height:     53.8rem;
+        flex-direction: column ;
+    }
+    .img.main{
+        --width:        100%;
+        --height:       20rem;
+        --top-left:     1rem;
+        --top-right:    1rem;
+        --bottom-left:  0;
+        --bottom-right: 0;
+        --x:            0;
+        --y:            -1.5rem;
+        --img-fit:      cover;
+    }
+    .img img{
+        --width:         100%;
+        --height:        100%;
+    }
+    .img.profile{
+        --width:        4rem;
+        --height:       4rem;
+        --top-left:     10rem;
+        --top-right:    10rem;
+        --bottom-left:  10rem;
+        --bottom-right: 10rem;
+        --x:            0;
+        --y:            0;
+    }
+    .content{
+        --row-gap:    var(--spacing-600);
+        --column-gap: var(--spacing-0);
+        max-width:    26.7rem;
+    }
+    .share{
+        --top-left:     0;
+        --top-right:    0;
+        --bottom-left:  1rem;
+        --bottom-right: 1rem;
+        --share-width:  32.7rem;
+        --share-height: 7.6rem;
+        --top-pos:      46.2rem;
+        --left-pos:     0;
+    }
+}

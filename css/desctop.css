@@ -1,0 +1,55 @@
+@media screen and (min-width: 769px) {
+    .main__conteiner{
+        --row-gap:      var(--spacing-0);
+        --column-gap:   var(--spacing-500);
+        --width:        73rem;
+        --height:       28rem;
+        flex-direction:  row;
+    }
+    .img.main{
+        --width:        28.5rem;
+        --height:       100%;
+        --top-left:     1rem;
+        --top-right:    0;
+        --bottom-left:  1rem;
+        --bottom-right: 0;
+        --x:            0;
+        --y:            0;
+        --img-fit:      cover;
+        overflow:       hidden;
+        flex-shrink:    0;
+    }
+    .img img{
+        --width:         100%;
+        --height:        100%;
+    }
+    .img.profile{
+        --width:        4rem;
+        --height:       4rem;
+        --top-left:     10rem;
+        --top-right:    10rem;
+        --bottom-left:  10rem;
+        --bottom-right: 10rem;
+        --x:            0;
+        --y:            0;
+    }
+    .content{
+        --row-gap:    var(--spacing-300);
+        --column-gap: var(--spacing-0);
+        max-width:    36.5rem;
+    }
+    .share{
+        --top-left:     1rem;
+        --top-right:    1rem;
+        --bottom-left:  1rem;
+        --bottom-right: 1rem;
+        --share-width:  24.8rem;
+        --share-height: 5.5rem;
+        --top-pos:      12.8rem;
+        --left-pos:     55rem;
+        box-shadow:     0 10px 10px 0 rgba(201, 213, 225, 0.5034);
+    }
+    .share_btn{
+        margin-right:   5px;
+    }
+}

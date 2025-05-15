@@ -2,63 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Meet landing page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/desctop.css">
+  <script defer src="script.js"></script>
+  
+  <title>Frontend Mentor | Article preview component</title>
+
 </head>
 <body>
-  <div class="logo">
-    <img class="icon" src="assets/logo.svg" alt="dots icon">
-  </div>
+  <main class="main">
+    <div class="main__conteiner">
+      <div class="img main">
+        <img src="assets/images/drawers.jpg" alt="">
+      </div>
+      <div class="content">
+        
+        <div class="text">
+          <h1 class="text__header">
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+          </h1>
+          <span class="text__main">
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+          </span>
+        </div>
 
-  <header>
-    <img class="left_img" src="assets/desktop/image-hero-left.png" alt="">
-    <div class="text_group">
-      <h1>Group Chat for Everyone</h1>
-      <span class="description">
-        Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
-      </span>
-      <div class="button_group">
-        <div class="blue button">Download <span style="color: var(--blue-300);">v1.3</span></div>
-        <div class="purple button">What is it?</div>
+        <div class="author">
+          <div class="author__profile"> 
+            <div class="img profile">
+              <img src="assets/images/avatar-michelle.jpg" alt="">
+            </div>
+            <div class="author__data">
+              <div class="author__name">Michelle Appleton</div>
+              <div class="author__date">28 Jun 2020</div>
+            </div>
+          </div>
+          <button class="share_btn">
+            <svg xmlns="assets/images/icon-share.svg" width="15" height="13">
+              <path d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+            </svg>  
+          </button>
+        </div>
+
       </div>
-    </div>
-    <img class="right_img" src="assets/desktop/image-hero-right.png" alt="">
-  </header>
-  
-  <main>
-    <img src="assets/arrow_01.svg" alt="">
-    <div class="gallery">
-      <img src="assets/desktop/image-woman-in-videocall.jpg" alt="">
-      <img src="assets/desktop/image-women-videochatting.jpg" alt="">
-      <img src="assets/desktop/image-men-in-meeting.jpg" alt="">
-      <img src="assets/desktop/image-man-texting.jpg" alt="">
-    </div>
-    <div class="text_group">
-      <div class="title">
-        <span class="blue_text">Built for modern use</span>
-        <h2>Smarter meetings, all in one place</h2>
+      <div class="share visible-hidden">
+        <div class="share__content">
+          <div class="share__text">Share</div>
+          <div class="share__logo">
+            <div class="share__facebook"> <img src="assets/images/icon-facebook.svg"  alt=""></div>
+            <div class="share__twiter">   <img src="assets/images/icon-twitter.svg"   alt=""></div>
+            <div class="share__pinterest"><img src="assets/images/icon-pinterest.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="triangle"></div>
       </div>
-      <span class="description">
-        Send messages, share files, show your screen, and record your meetings — all in one 
-        workspace. Control who can join with invite-only team access, data encryption, and data export.
-      </span>
+
+
     </div>
   </main>
-  <div class="arrow_2">
-    <img src="assets/arrow_02.svg" alt="">
-  </div>
-  <footer>
-    <div class="conteiner">
-      <h2>Experience more together</h2>
-      <span class="description">
-        Stay connected with reliable&nbsp;HD meetings and unlimited one-on-one and group video sessions.
-      </span>
-      <div>
-        <div class="purple button">Download <span style="color: var(--purple-300);">v1.3</span></div>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
+

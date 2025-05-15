@@ -1,32 +1,24 @@
-Red Hat Display Variable Font
-=============================
+Manrope Variable Font
+=====================
 
-This download contains Red Hat Display as both variable fonts and static fonts.
+This download contains Manrope as both a variable font and static fonts.
 
-Red Hat Display is a variable font with this axis:
+Manrope is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  RedHatDisplay-VariableFont_wght.ttf
-  RedHatDisplay-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Manrope-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Red Hat Display:
-  static/RedHatDisplay-Light.ttf
-  static/RedHatDisplay-Regular.ttf
-  static/RedHatDisplay-Medium.ttf
-  static/RedHatDisplay-SemiBold.ttf
-  static/RedHatDisplay-Bold.ttf
-  static/RedHatDisplay-ExtraBold.ttf
-  static/RedHatDisplay-Black.ttf
-  static/RedHatDisplay-LightItalic.ttf
-  static/RedHatDisplay-Italic.ttf
-  static/RedHatDisplay-MediumItalic.ttf
-  static/RedHatDisplay-SemiBoldItalic.ttf
-  static/RedHatDisplay-BoldItalic.ttf
-  static/RedHatDisplay-ExtraBoldItalic.ttf
-  static/RedHatDisplay-BlackItalic.ttf
+in those cases you can use the static font files for Manrope:
+  static/Manrope-ExtraLight.ttf
+  static/Manrope-Light.ttf
+  static/Manrope-Regular.ttf
+  static/Manrope-Medium.ttf
+  static/Manrope-SemiBold.ttf
+  static/Manrope-Bold.ttf
+  static/Manrope-ExtraBold.ttf
 
 Get started
 -----------
